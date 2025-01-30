@@ -1,9 +1,9 @@
 const pages = {
     calculator: `
-                <h1>Калькулятор площі квадрата</h1>
+                <h1>Периметр та площа квадрата</h1>
                 <div class="calculator">
                     <input type="number" id="sideLength" placeholder="Введіть довжину сторони (м)">
-                    <button onclick="calculateArea()">Розрахувати площу</button>
+                    <button onclick="calculateArea()">Розрахувати</button>
                     <div class="result" id="result"></div>
                 </div>
             `,
@@ -57,7 +57,8 @@ function calculateArea() {
     const resultDiv = document.getElementById('result');
     if (sideLength > 0) {
         const area = sideLength * sideLength;
-        resultDiv.textContent = `Площа квадрата: ${area} м²`;
+        const perimeter = sideLength * 4;
+        resultDiv.textContent = `Периметр: ${perimeter}, Площа: ${area}`;
     } else {
         resultDiv.textContent = 'Введіть коректне значення.';
     }
