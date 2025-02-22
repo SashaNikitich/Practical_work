@@ -136,7 +136,6 @@ function calculateTrigonometry() {
     }
 }
 
-// Task_6: Обчислення радіусу за довжиною кола
 function calculateRadius() {
     const circumference = parseFloat(document.getElementById('circumference').value);
     const resultDiv = document.getElementById('result');
@@ -148,7 +147,6 @@ function calculateRadius() {
     }
 }
 
-// Task_7: Обчислення значення виразу
 function calculateExpression() {
     const x = parseFloat(document.getElementById('inputX').value);
     const resultDiv = document.getElementById('result');
@@ -160,7 +158,6 @@ function calculateExpression() {
     }
 }
 
-// Task_8: Обчислення радіусу внутрішнього кола
 function calculateInnerRadius() {
     const ringArea = parseFloat(document.getElementById('ringArea').value);
     const outerRadius = parseFloat(document.getElementById('outerRadius').value);
