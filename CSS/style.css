@@ -19,9 +19,10 @@ body {
     display: flex;
     width: 100%;
     flex: 1;
+    justify-content: space-between; /* Keeps sidebars at edges */
 }
 
-/* Sidebar Styling */
+/* Sidebar Styling (Common) */
 .sidebar {
     background: #3a3a3a;
     color: #fff;
@@ -32,6 +33,7 @@ body {
     flex-direction: column;
     max-height: 100vh;
     overflow-y: auto;
+    transition: 0.3s ease-in-out;
 }
 
 /* Scrollbar for Sidebar */
@@ -44,6 +46,27 @@ body {
     border-radius: 10px;
 }
 
+/* Left Sidebar (Tasks) */
+.left-sidebar {
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Sidebar (Lessons) */
+.right-sidebar {
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2); /* Shadow on the left side */
+}
+
+/* Sidebar Headers */
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /* Sidebar Menu Styling */
 .sidebar ul {
     list-style: none;
@@ -51,27 +74,30 @@ body {
 }
 
 .sidebar ul li {
-    margin: 8px 0;
+    margin: 10px 0;
 }
 
 .sidebar ul li a {
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     text-align: center;
     transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .sidebar ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
 /* Content Area */
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -85,97 +111,61 @@ body {
 .content h1 {
     margin-top: 0;
     color: #2c2c2c;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Description */
+.content p {
+    font-size: 18px;
+    color: #444;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
 /* Calculator Styling */
 .calculator {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     max-width: 300px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.calculator:hover {
+    transform: scale(1.03);
 }
 
 .calculator input {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 .calculator button {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     background-color: #3a3a3a;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .calculator button:hover {
     background-color: #2c2c2c;
+    transform: scale(1.05);
 }
 
 .calculator .result {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-}
-
-/* Footer Styling */
-.footer {
-    margin-top: auto;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #3a3a3a;
-    color: #fff;
-}
-
-/* Navigation Buttons */
-.nav-btn {
-    background: #3a3a3a;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin: 0 10px;
-}
-
-/* Button Hover Effect */
-.nav-btn:hover {
-    background: #5a5a5a;
-    transform: scale(1.1);
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
-}
-
-/* Hide Buttons on the First/Last Page */
-.nav-btn.prev[style*="display: none"], .nav-btn.next[style*="display: none"] {
-    display: none;
-}
-
-/* Responsive Styling for Smaller Screens */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        box-shadow: none;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
 }

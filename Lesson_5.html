@@ -10,7 +10,6 @@
 </head>
 <body onload="loadPage('speed')">
 <div class="container">
-    <div class="container">
         <div class="sidebar">
             <ul>
                 <li><a onclick="loadPage('speed')">Task_1</a></li>
@@ -22,15 +21,18 @@
                 <li><a onclick="loadPage('complexExpression')">Task_7</a></li>
                 <li><a onclick="loadPage('ringRadius')">Task_8</a></li>
             </ul>
-            <footer class="footer">
-                <button onclick="changePage('prev')" class="nav-btn prev">⬅Lesson4</button>
-                <button onclick="changePage('next')" class="nav-btn next">L5_olymp➡</button>
-            </footer>
         </div>
         <div class="content" id="content"></div>
-    </div>
+        <div class="sidebar right-sidebar">
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="Lesson_4.html">Lesson_4</a></li>
+                <li><a href="Lesson_5_olymp.html">Lesson_5-O</a></li>
+                <li><a href="Lesson_6.html">Lesson_6</a></li>
+            </ul>
+        </div>
 </div>
 <script defer src="JS/Lesson_5-script.js"></script>
-<script defer src="JS/Page-changer.js"></script>
 </body>
 </html>
