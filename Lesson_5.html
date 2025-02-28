@@ -9,30 +9,48 @@
     <title>Lesson_5</title>
 </head>
 <body onload="loadPage('speed')">
+
+<div class="header">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="logo">Математичний проєкт</div>
+    <div class="right-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="overlay"></div>
+
 <div class="container">
-        <div class="sidebar">
-            <ul>
-                <li><a onclick="loadPage('speed')">Task_1</a></li>
-                <li><a onclick="loadPage('triangle')">Task_2</a></li>
-                <li><a onclick="loadPage('circle')">Task_3</a></li>
-                <li><a onclick="loadPage('square')">Task_4</a></li>
-                <li><a onclick="loadPage('trigonometry')">Task_5</a></li>
-                <li><a onclick="loadPage('radiusFromCircumference')">Task_6</a></li>
-                <li><a onclick="loadPage('complexExpression')">Task_7</a></li>
-                <li><a onclick="loadPage('ringRadius')">Task_8</a></li>
-            </ul>
-        </div>
-        <div class="content" id="content"></div>
-        <div class="sidebar right-sidebar">
-            <h2>Pages</h2>
-            <ul>
-                <li><a href="index.html">Main page</a></li>
-                <li><a href="Lesson_4.html">Lesson_4</a></li>
-                <li><a href="Lesson_5_olymp.html">Lesson_5-O</a></li>
-                <li><a href="Lesson_6.html">Lesson_6</a></li>
-            </ul>
-        </div>
+    <div class="sidebar left-sidebar">
+        <ul>
+            <li><a onclick="loadPage('speed')">Task_1</a></li>
+            <li><a onclick="loadPage('triangle')">Task_2</a></li>
+            <li><a onclick="loadPage('circle')">Task_3</a></li>
+            <li><a onclick="loadPage('square')">Task_4</a></li>
+            <li><a onclick="loadPage('trigonometry')">Task_5</a></li>
+            <li><a onclick="loadPage('radiusFromCircumference')">Task_6</a></li>
+            <li><a onclick="loadPage('complexExpression')">Task_7</a></li>
+            <li><a onclick="loadPage('ringRadius')">Task_8</a></li>
+        </ul>
+    </div>
+    <div class="content" id="content"></div>
+    <div class="sidebar right-sidebar">
+        <h2>Pages</h2>
+        <ul>
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="Lesson_4.html">Lesson_4</a></li>
+            <li><a href="Lesson_5_olymp.html">Lesson_5-O</a></li>
+            <li><a href="Lesson_6.html">Lesson_6</a></li>
+        </ul>
+    </div>
 </div>
 <script defer src="JS/Lesson_5-script.js"></script>
+<script defer src="JS/hamburger.js"></script>
 </body>
 </html>
