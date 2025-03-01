@@ -1,6 +1,9 @@
 const pages = {
     calculator: `
-                <h1>Периметр та площа квадрата</h1>
+                <h1>Приклад 1</h1>
+                
+                <p>Знаходження периметра та площі квадрата</p>
+                
                 <div class="calculator">
                     <input type="number" id="sideLength" placeholder="Введіть довжину сторони (м)">
                     <button onclick="calculateArea()">Розрахувати</button>
@@ -8,7 +11,10 @@ const pages = {
                 </div>
             `,
     average: `
-                <h1>Середнє арифметичне двох чисел</h1>
+                <h1>Приклад 2</h1>
+                
+                <p>Знаходження середнього арифметичного двох чисел</p>
+                
                 <div class="calculator">
                     <input type="number" id="number1" placeholder="Перше число">
                     <input type="number" id="number2" placeholder="Друге число">
@@ -17,7 +23,10 @@ const pages = {
                 </div>
             `,
     rectangle: `
-                <h1>Периметр і площа прямокутника</h1>
+                <h1>Приклад 3</h1>
+                
+                <p>Знаходження периметра та площі прямокутника</p>
+                
                 <div class="calculator">
                     <input type="number" id="length" placeholder="Довжина">
                     <input type="number" id="width" placeholder="Ширина">
@@ -26,7 +35,10 @@ const pages = {
                 </div>
             `,
     midpoint: `
-                <h1>Координати середини відрізка</h1>
+                <h1>Приклад 4</h1>
+                
+                <p>Знаходження координат по точкам</p>
+                
                 <div class="calculator">
                     <input type="number" id="x1" placeholder="X1">
                     <input type="number" id="y1" placeholder="Y1">
@@ -37,7 +49,10 @@ const pages = {
                 </div>
             `,
     water: `
-                <h1>Споживання води</h1>
+                <h1>Приклад 5</h1>
+                
+                <p>Обчислення вартості води за фіксованим ціною та об'ємом</p>
+                
                 <div class="calculator">
                     <input type="number" id="waterUsage" placeholder="Об’єм води (м³)">
                     <input type="number" id="waterRate" placeholder="Вартість за м³">

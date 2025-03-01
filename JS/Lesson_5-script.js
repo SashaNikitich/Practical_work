@@ -1,6 +1,9 @@
 const pages = {
     speed: `
-                <h1>Знаходження швидкості руху</h1>
+                <h1>Приклад 1</h1>
+                
+                <p>Знаходження швидкості руху автомобіля за введеними шляхом та часом руху.</p>
+                
                 <div class="calculator">
                     <input type="number" id="way" placeholder="Введіть шлях (км)">
                     <input type="number" id="time" placeholder="Введіть час (год)">
@@ -9,7 +12,10 @@ const pages = {
                 </div>
             `,
     triangle: `
-                <h1>Прямокутний трикутник</h1>
+                <h1>Приклад 2</h1>
+                
+                <p>Знаходження гіпотенузи, периметра і площі прямокутного трикутника за введеними катетами.</p>
+                
                 <div class="calculator">
                     <input type="number" id="cathetus1" placeholder="Перший катет">
                     <input type="number" id="cathetus2" placeholder="Другий катет">
@@ -18,7 +24,10 @@ const pages = {
                 </div>
             `,
     circle: `
-                <h1>Площа круга</h1>
+                <h1>Приклад 3</h1>
+                
+                <p>Знаходження площі круга з точністю 2 знаки після коми за введеним радіусом.</p>
+                
                 <div class="calculator">
                     <input type="number" id="radius" placeholder="Радіус">
                     <button onclick="calculateCircle()">Розрахувати</button>
@@ -26,7 +35,10 @@ const pages = {
                 </div>
             `,
     square: `
-                <h1>Квадрат</h1>
+                <h1>Приклад 4</h1>
+                
+                <p>Знаходження периметра, площі та діагоналі квадрата з точністю 1 знак після коми за введеною стороною квадрата.</p>
+                
                 <div class="calculator">
                     <input type="number" id="side" placeholder="Сторона квадрата">
                     <button onclick="calculateSquare()">Розрахувати</button>
@@ -34,7 +46,10 @@ const pages = {
                 </div>
             `,
     trigonometry: `
-                <h1>Тригонометрія</h1>
+                <h1>Приклад 5</h1>
+                
+                <p>Програма для обчислення sin та cos даного кута. Результати обчислення виводяться з точністю 5 знаків після коми.</p>
+                
                 <div class="calculator">
                     <input type="number" id="angle" placeholder="Кут (градуси)">
                     <button onclick="calculateTrigonometry()">Розрахувати</button>
@@ -42,7 +57,10 @@ const pages = {
                 </div>
             `,
     radiusFromCircumference: `
-                <h1>Радіус кола</h1>
+                <h1>Приклад 6</h1>
+                
+                <p>Обчислення радіуса кола (з точністю 3 знаки після коми) за введеною довжиною кола</p>
+                
                 <div class="calculator">
                     <input type="number" id="circumference" placeholder="Довжина кола">
                     <button onclick="calculateRadius()">Розрахувати</button>
@@ -50,7 +68,8 @@ const pages = {
                 </div>
             `,
     complexExpression: `
-                <h1>Обчислення виразу y=|x⁵-2|+3</h1>
+                <h1>Приклад 7</h1>
+                <p>Обчислення виразу y=|x⁵-2|+3</p>
                 <div class="calculator">
                     <input type="number" id="inputX" placeholder="Введіть x">
                     <button onclick="calculateExpression()">Розрахувати</button>
@@ -58,7 +77,10 @@ const pages = {
                 </div>
             `,
     ringRadius: `
-                <h1>Радіус внутрішнього кола</h1>
+                <h1>Приклад 8</h1>
+                
+                <p>Задано площу кільця й радіус зовнішнього кола. Визначення радіуса внутрішнього кола.</p>
+                
                 <div class="calculator">
                     <input type="number" id="ringArea" placeholder="Площа кільця">
                     <input type="number" id="outerRadius" placeholder="Радіус зовнішнього кола">

@@ -1,31 +1,45 @@
 const pages = {
     task1: `
-        <h1>Порівняння чисел</h1>
+        <h1>Приклад 1</h1>
+        
+        <p>Визначити менше число. Якщо числа рівні, то повідомляється про це. </p>
+        
         <div class="calculator">
             <input type="number" id="number1" placeholder="Перше число" />
             <input type="number" id="number2" placeholder="Друге число" />
             <button onclick="compare()">Розрахувати</button>
             <div class="result" id="result"></div>
         </div>
+        
+        
     `,
     task2: `
-        <h1>Обчислення функції y = √(x - 10)</h1>
+        <h1>Приклад 2</h1>
+        
+        <p>Обчислення функції y = √(x - 10)</p>
+        
         <div class="calculator">
-            <input type="number" id="x" placeholder="Введіть число" />
+            <input type="number" id="x" placeholder="Введіть x" />
             <button onclick="calculateFunction()">Розрахувати</button>
             <div class="result" id="result"></div>
         </div>
     `,
     task3: `
-        <h1>Функція з обмеженням y = √(5 - x) / (x - 1)</h1>
+        <h1>Приклад 3</h1>
+        
+        <p>Функція з обмеженням y = √(5 - x) / (x - 1)</p>
+        
         <div class="calculator">
-            <input type="number" id="x" placeholder="Введіть число" />
+            <input type="number" id="x" placeholder="Введіть x" />
             <button onclick="calculateFunction2()">Розрахувати</button>
             <div class="result" id="result"></div>
         </div>
     `,
     task4: `
-        <h1>Тип трикутника</h1>
+        <h1>Приклад 4</h1>
+        
+        <p>Програму, яка визначає тип трикутника: “Рівносторонній”, “Рівнобедрений” або “Різносторонній”</p>
+        
         <div class="calculator">
             <input type="number" id="A" placeholder="Перша сторона" />
             <input type="number" id="B" placeholder="Друга сторона" />
@@ -35,7 +49,10 @@ const pages = {
         </div>
     `,
     task5: `
-        <h1>Номер дня тижня</h1>
+        <h1>Приклад 5</h1>
+        
+        <p>Програма за введеним номером дня тижня визначає його назву.</p>
+        
         <div class="calculator">
             <input type="number" id="dayNumber" placeholder="Введіть номер дня" />
             <button onclick="dayOfWeek()">Розрахувати</button>
@@ -43,7 +60,10 @@ const pages = {
         </div>
     `,
     task6: `
-        <h1>Тип дня тижня</h1>
+        <h1>Приклад 6</h1>
+        
+        <p>Програма за введеним номером дня тижня визначає робочий цей день чи вихідний. Слово “робочий” виводить чорним кольором, а ”вихідний” – червоним.</p>
+        
         <div class="calculator">
             <input type="number" id="dayNumber" placeholder="Введіть номер дня" />
             <button onclick="dayType()">Розрахувати</button>
@@ -51,7 +71,10 @@ const pages = {
         </div>
     `,
     task7: `
-        <h1>Більше число з тернарним оператором</h1>
+        <h1>Приклад 7</h1>
+        
+        <p>Визначення більшого з двох заданих різних чисел, використавуючи тернарний оператор</p>
+        
         <div class="calculator">
             <input type="number" id="A" placeholder="Перше число" />
             <input type="number" id="B" placeholder="Друге число" />
@@ -60,7 +83,10 @@ const pages = {
         </div>
     `,
     task8: `
-        <h1>Парне чи непарне число</h1>
+        <h1>Приклад 8</h1>
+        
+        <p>Дано натуральне число. Визначити парне воно чи ні.</p>
+        
         <div class="calculator">
             <input type="number" id="n" placeholder="Введіть число" />
             <button onclick="evenOrOdd()">Розрахувати</button>
@@ -68,7 +94,12 @@ const pages = {
         </div>
     `,
     task9: `
-        <h1>Вартість електроенергії</h1>
+        <h1>Приклад 9</h1>
+        
+        <p>Відомо початкові та кінцеві показники спожитої електроенергії. Вартість 1кВт·год електроенергії становить 0,9грн, якщо обсяг споживання 
+        не перевищує 100кВт·год. Для понаднормових витрат тариф становить 1,68грн. Обчислення кількості спожитої електроенергії за та поза нормою, 
+        суму до сплати.</p>
+        
         <div class="calculator">
             <input type="number" id="start" placeholder="Початкові показники" />
             <input type="number" id="end" placeholder="Кінцеві показники" />
@@ -77,7 +108,10 @@ const pages = {
         </div>
     `,
     task10: `
-        <h1>Перевірка на трикутник</h1>
+        <h1>Приклад 10</h1>
+        
+        <p>Відомо довжини трьох відрізків. Визначення, чи можна з даних відрізків утворити трикутник</p>
+        
         <div class="calculator">
             <input type="number" id="A" placeholder="Перша сторона" />
             <input type="number" id="B" placeholder="Друга сторона" />
@@ -87,7 +121,10 @@ const pages = {
         </div>
     `,
     task11: `
-        <h1>Агрегатний стан води</h1>
+        <h1>Приклад 11</h1>
+        
+        <p>За заданою температурою води потрібно визначити її агрегатний стан: «Твердий», «Рідкий» чи «Газоподібній»</p>
+        
         <div class="calculator">
             <input type="number" id="temperature" placeholder="Температура води" />
             <button onclick="waterState()">Розрахувати</button>
@@ -95,7 +132,10 @@ const pages = {
         </div>
     `,
     task12: `
-        <h1>Пора року</h1>
+        <h1>Приклад 12</h1>
+        
+        <p>Відомо номер місяця. Виведення на екран відповідну пору року.</p>
+        
         <div class="calculator">
             <input type="number" id="month" placeholder="Номер місяця" />
             <button onclick="season()">Розрахувати</button>
@@ -103,7 +143,10 @@ const pages = {
         </div>
     `,
     task13: `
-        <h1>Прямокутний трикутник</h1>
+        <h1>Приклад 13</h1>
+        
+        <p>Відомо сторони трикутника, потрібно визначити прямокутний він чи ні</p>
+        
         <div class="calculator">
             <input type="number" id="A" placeholder="Перша сторона" />
             <input type="number" id="B" placeholder="Друга сторона" />
@@ -113,7 +156,10 @@ const pages = {
         </div>
     `,
     task14: `
-        <h1>Корені квадратного рівняння</h1>
+        <h1>Приклад 14</h1>
+        
+        <p>Відомо коефіцієнти квадратного рівняння. Визначення скільки коренів має дане рівняння: 2, 1 або 0</p>
+        
         <div class="calculator">
             <input type="number" id="a" placeholder="Коефіцієнт a" />
             <input type="number" id="b" placeholder="Коефіцієнт b" />
@@ -123,7 +169,10 @@ const pages = {
         </div>
     `,
     task15: `
-        <h1>Кількість днів у місяці</h1>
+        <h1>Приклад 15</h1>
+        
+        <p>Виведення кількість днів в N–му місяці M–го року по григоріанському календарю.</p>
+        
         <div class="calculator">
             <input type="number" id="month" placeholder="Номер місяця" />
             <input type="number" id="year" placeholder="Рік" />
@@ -132,7 +181,11 @@ const pages = {
         </div>
     `,
     task16: `
-        <h1>Корені квадратного рівняння з обмеженням</h1>
+        <h1>Приклад 16</h1>
+        
+        <p>Програма для розв’язання квадратного рівняння. 
+        Задано 3 числа - коефіцієнти квадратного рівняння відповідно a, b та c. Значення коефіцієнтів не перевищують по модулю 100.</p>
+        
         <div class="calculator">
             <input type="number" id="a" placeholder="Коефіцієнт a" />
             <input type="number" id="b" placeholder="Коефіцієнт b" />
@@ -142,7 +195,10 @@ const pages = {
         </div>
     `,
     task17: `
-        <h1>Яка чверть?</h1>
+        <h1>Приклад 17</h1>
+        
+        <p>Задано точку з координатами х та у. Визначення, в якій координатній чверті вона розміщена.</p>
+        
         <div class="calculator">
             <input type="number" id="x" placeholder="x" />
             <input type="number" id="y" placeholder="y" />
@@ -151,7 +207,10 @@ const pages = {
         </div>
     `,
     task18: `
-        <h1>Номери будинків</h1>
+        <h1>Приклад 18</h1>
+        
+        <p>З'ясування, чи знаходяться будинки з номерами n та m на одній стороні вулиці. Вхідні дані: Значення n та m (1 ≤ n, m ≤ 100).</p>
+        
         <div class="calculator">
             <input type="number" id="n" placeholder="Номер будинку 1" />
             <input type="number" id="m" placeholder="Номер будинку 2" />
