@@ -220,11 +220,6 @@ const pages = {
     `,
 };
 
-function loadPage(page) {
-    const contentDiv = document.getElementById('content');
-    contentDiv.innerHTML = pages[page] || '<h1>Сторінка не знайдена</h1>';
-}
-
 function compare() {
     const resultDiv = document.getElementById('result');
     const number1 = parseFloat(document.getElementById('number1').value);

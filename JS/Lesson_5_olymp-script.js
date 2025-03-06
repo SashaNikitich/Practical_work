@@ -37,11 +37,6 @@ const pages = {
             `
 };
 
-function loadPage(page) {
-    const contentDiv = document.getElementById('content');
-    contentDiv.innerHTML = pages[page] || '<h1>Сторінка не знайдена</h1>';
-}
-
 function calculateWeight() {
     let a = document.getElementById('A').value;
     let b = document.getElementById('B').value;

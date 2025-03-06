@@ -90,11 +90,6 @@ const pages = {
             `
 };
 
-function loadPage(page) {
-    const contentDiv = document.getElementById('content');
-    contentDiv.innerHTML = pages[page] || '<h1>Сторінка не знайдена</h1>';
-}
-
 function calculateSpeed() {
     const way = document.getElementById('way').value;
     const time = document.getElementById('time').value;
