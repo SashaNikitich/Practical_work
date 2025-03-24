@@ -2,13 +2,31 @@ const pages = {
     task1: `
         <h1>Приклад 1</h1>
         
-        <p>Визначити менше число. Якщо числа рівні, то повідомляється про це. </p>
+        <p>Калькулятор</p>
         
         <div class="calculator">
-            <input type="number" id="number1" placeholder="Перше число" />
-            <input type="number" id="number2" placeholder="Друге число" />
-            <button onclick="compare()">Розрахувати</button>
-            <div class="result" id="result"></div>
+            <input type="number" id="num1" placeholder="Перше число">
+            <input type="number" id="num2" placeholder="Друге число">
+            
+            <label>
+                <input type="radio" name="operation" value="+" onclick="calculate()"> Додати
+            </label>
+            <label>
+                <input type="radio" name="operation" value="-" onclick="calculate()"> Відняти
+            </label>
+            <label>
+                <input type="radio" name="operation" value="*" onclick="calculate()"> Множити
+            </label>
+            <label>
+                <input type="radio" name="operation" value="/" onclick="calculate()"> Ділити
+            </label>
+            <label>
+                <input type="radio" name="operation" value="%" onclick="calculate()"> Остача
+            </label>
+            <label>
+                <input type="radio" name="operation" value="^" onclick="calculate()"> Степінь
+            </label>
+            <h3 id="result"></h3>
         </div>
         
         
@@ -16,95 +34,130 @@ const pages = {
     task2: `
         <h1>Приклад 2</h1>
         
-        <p>Обчислення функції y = √(x - 10)</p>
+        <p>Зображення геометричних тіл</p>
         
         <div class="calculator">
-            <input type="number" id="x" placeholder="Введіть x" />
-            <button onclick="calculateFunction()">Розрахувати</button>
-            <div class="result" id="result"></div>
+            <label>
+                <input type="radio" name="operation" value="Тетрайдер" onclick="changePhoto()"> Тетрайдер
+            </label>
+            <label>
+                <input type="radio" name="operation" value="Куб" onclick="changePhoto()"> Куб
+            </label>
+            <label>
+                <input type="radio" name="operation" value="Октаедр" onclick="changePhoto()"> Октаедр
+            </label>
+            <label>
+                <input type="radio" name="operation" value="Додекаедр" onclick="changePhoto()"> Додекаедр
+            </label>
+            <label>
+                <input type="radio" name="operation" value="Ікосадаедр" onclick="changePhoto()"> Ікосаедр
+            </label>
+            <div id="result"></div>
         </div>
     `,
     task3: `
-        <h1>Приклад 3</h1>
-        
-        <p>Функція з обмеженням y = √(5 - x) / (x - 1)</p>
-        
+        <h1>Обчислення об'єму тіл обертання</h1>
         <div class="calculator">
-            <input type="number" id="x" placeholder="Введіть x" />
-            <button onclick="calculateFunction2()">Розрахувати</button>
-            <div class="result" id="result"></div>
+            <label>
+                <input type="radio" name="shape" value="cylinder"> Циліндр
+            </label>
+            <label>
+                <input type="radio" name="shape" value="cone"> Конус
+            </label>
+            <label>
+                <input type="radio" name="shape" value="sphere"> Куля
+            </label>
+            <br>
+            <input type="number" id="radius" placeholder="Радіус">
+            <input type="number" id="height" placeholder="Висота" class="hidden">
+            
+            <button type="button" id="calculateBtn">Обчислити</button>
+            <h3 id="result"></h3>
         </div>
-    `,
-    task4: `
-        <h1>Приклад 4</h1>
-        
-        <p>Програму, яка визначає тип трикутника: “Рівносторонній”, “Рівнобедрений” або “Різносторонній”</p>
-        
-        <div class="calculator">
-            <input type="number" id="A" placeholder="Перша сторона" />
-            <input type="number" id="B" placeholder="Друга сторона" />
-            <input type="number" id="C" placeholder="Третя сторона" />
-            <button onclick="triangleType()">Розрахувати</button>
-            <div class="result" id="result"></div>
-        </div>
-    `,
-    task5: `
-        <h1>Приклад 5</h1>
-        
-        <p>Програма за введеним номером дня тижня визначає його назву.</p>
-        
-        <div class="calculator">
-            <input type="number" id="dayNumber" placeholder="Введіть номер дня" />
-            <button onclick="dayOfWeek()">Розрахувати</button>
-            <div class="result" id="result"></div>
-        </div>
-    `,
-    task6: `
-        <h1>Приклад 6</h1>
-        
-        <p>Програма за введеним номером дня тижня визначає робочий цей день чи вихідний. Слово “робочий” виводить чорним кольором, а ”вихідний” – червоним.</p>
-        
-        <div class="calculator">
-            <input type="number" id="dayNumber" placeholder="Введіть номер дня" />
-            <button onclick="dayType()">Розрахувати</button>
-            <div class="result" id="result"></div>
-        </div>
-    `,
-    task7: `
-        <h1>Приклад 7</h1>
-        
-        <p>Визначення більшого з двох заданих різних чисел, використавуючи тернарний оператор</p>
-        
-        <div class="calculator">
-            <input type="number" id="A" placeholder="Перше число" />
-            <input type="number" id="B" placeholder="Друге число" />
-            <button onclick="findLarger()">Розрахувати</button>
-            <div class="result" id="result"></div>
-        </div>
-    `,
-    task8: `
-        <h1>Приклад 8</h1>
-        
-        <p>Дано натуральне число. Визначити парне воно чи ні.</p>
-        
-        <div class="calculator">
-            <input type="number" id="n" placeholder="Введіть число" />
-            <button onclick="evenOrOdd()">Розрахувати</button>
-            <div class="result" id="result"></div>
-        </div>
-    `,
-    task9: `
-        <h1>Приклад 9</h1>
-        
-        <p>Відомо початкові та кінцеві показники спожитої електроенергії. Вартість 1кВт·год електроенергії становить 0,9грн, якщо обсяг споживання 
-        не перевищує 100кВт·год. Для понаднормових витрат тариф становить 1,68грн. Обчислення кількості спожитої електроенергії за та поза нормою, 
-        суму до сплати.</p>
-        
-        <div class="calculator">
-            <input type="number" id="start" placeholder="Початкові показники" />
-            <input type="number" id="end" placeholder="Кінцеві показники" />
-            <button onclick="electricityCost()">Розрахувати</button>
-            <div class="result" id="result"></div>
-        </div>
-        `
+    `
+       
 };
+
+function calculate() {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var operation = document.querySelector('input[name="operation"]:checked').value;
+    var result;
+
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById('result').textContent = 'Будь ласка, введіть обидва числа!';
+        return;
+    }
+
+    switch (operation) {
+        case '+': result = num1 + num2; break;
+        case '-': result = num1 - num2; break;
+        case '*': result = num1 * num2; break;
+        case '/':
+            if (num2 === 0) {
+                result = 'Помилка: ділення на нуль!';
+            } else {
+                result = num1 / num2;
+            }
+            break;
+        case '%': result = num1 % num2; break;
+        case '^': result = Math.pow(num1, num2); break;
+        default: result = 'Оберіть операцію!';
+    }
+
+    document.getElementById('result').textContent = 'Результат: ' + result;
+}
+
+function changePhoto() {
+    var operation = document.querySelector('input[name="operation"]:checked').value;
+    var result;
+    var img = document.getElementById('resultImage');
+
+    // Очистити зображення перед кожною зміною
+    if (img) {
+        img.remove();
+    }
+
+    switch (operation) {
+        case 'Тетрайдер':
+            result = 'кількість граней = 4';
+            img = document.createElement('img');
+            img.src = 'assets/images/Tetrahedron.gif';
+            img.alt = 'Тетрайдер';
+            break;
+        case 'Куб':
+            result = 'кількість граней = 6';
+            img = document.createElement('img');
+            img.src = 'assets/images/Hexahedron.gif'; 
+            img.alt = 'Куб';
+            break;
+        case 'Октаедр':
+            result = 'кількість граней = 12';
+            img = document.createElement('img');
+            img.src = 'assets/images/Octahedron.gif';
+            img.alt = 'Октаедр';
+            break;
+        case 'Додекаедр':
+            result = 'кількість трикутних граней = 8';
+            img = document.createElement('img');
+            img.src = 'assets/images/Dodecahedron.gif'; 
+            img.alt = 'Додекаедр';
+            break;
+        case 'Ікосадаедр':
+            result = 'кількість граней = 12';
+            img = document.createElement('img');
+            img.src = 'assets/images/Icosahedron.gif';
+            img.alt = 'Ікосаедр';
+            break;
+        default:
+            result = 'Оберіть операцію!';
+    }
+
+    if (img) {
+        img.id = 'resultImage';
+        document.getElementById('result').textContent = 'Результат: ' + result;
+        document.getElementById('result').appendChild(img);
+    } else {
+        document.getElementById('result').textContent = 'Оберіть операцію!';
+    }
+}
